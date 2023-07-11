@@ -30,6 +30,10 @@ ul {
   list-style-type: none;
 }
 
+i {
+  color: #c0c0c0;
+}
+
 .nav-menu {
   background-color: grey;
   height: 20rem;
@@ -67,6 +71,7 @@ ul {
 
   i {
     padding-left: 2rem;
+    color: #262a32;
   }
   .white-space {
     display: none;
