@@ -1,0 +1,47 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer h4,
+.categoriest h4 {
+  color: #333333;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+p {
+  margin-top: 1rem;
+}
+
+.contact p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.categoriest {
+  margin-left: 0rem;
+}
+
+.categoriest ul {
+  color: #b1afae;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+.categoriest li {
+  margin-bottom: 2rem;
+}
+
+.two,
+.three {
+  margin-top: 4.78rem;
+}
+
+.footer__icons {
+  margin-top: 0;
+  text-align: center;
+}
+
+.footer__icons i {
+  margin-left: 2rem;
+}

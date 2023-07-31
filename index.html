@@ -5,14 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="CSS/normalize.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    
     <script
       src="https://kit.fontawesome.com/be99c0c318.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <div class="container">
+    <!-- header part -->
+    <div class="header">
+      <header>
+        <button id="btn-menu">
+          <i class="fa-solid fa-bars fa-2xl" style="color: #000000"></i>
+        </button>
+        <a href="index.html"><img src="images/logo_icon.png" alt="" /></a>
+        <div class="white-space"></div>
+      </header>
+      <nav class="nav-menu hidden">
+        <ul>
+          <span class="hover--element">
+            <li>SERVICES</li>
+          </span>
+          <li>COMPANY</li>
+          <li>LIBRARY</li>
+          <li>CONTACT US</li>      
+        </ul>
+      </nav>
+
+      <div class="icons">
+        <i
+          class="fa-solid fa-magnifying-glass fa-flip-horizontal fa-xl lupa"
+          style="color: #c0c0c0"
+        ></i>
+        <i class="fa-regular fa-user fa-xl" id="btn" style="color: #c0c0c0"></i>
+        <i class="fa-regular fa-heart fa-xl" style="color: #c0c0c0"></i>
+        <a href="cart.html" class="icon__bag"><i class="fa-solid fa-bag-shopping fa-xl" style="color: #c0c0c0"></i></a>
+      </div>
+    </div>
+
+    <!-- /header part -->
+
+    <!-- login modal -->
+    <div class="middle">
       <div class="login-modal hidden">
         <h3 class="modal__title">Sign in</h3>
         <div class="modal__body">
@@ -21,7 +72,7 @@
           >
           <input
             type="email"
-            name=""
+            name="email"
             id="email"
             class="modal__input input--email"
           />
@@ -49,6 +100,325 @@
       </div>
     </div>
     <div class="overlay hidden"></div>
+
+    <!-- /login modal -->
+
+    <!-- carousel banner -->
+    <div class="carousel--banner">
+      <div class="carousel--banner__body">
+        <h1 class="carousel--title">Control and manage any device with cloud solution </h1>
+        <p class="carousel--info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, possimus?</p>
+        <button class="carousel--btn">VIEW MORE</button>
+      </div>
+      <div class="carousel--banner__second">
+        <img src="images/palm-image.png" alt="">
+        <h3>Follow us on Facebook</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, atque.</p>
+        <a href="https://www.facebook.com/" target="_blank"><button>FOLLOW</button></a>
+      </div>
+    </div>
+    <!-- /carousel banner  -->
+
+    <!-- product tile -->
+
+    <div id="container">
+      <h2 class="popular--items">Popular Items</h2>
+      <div class="container">
+        <div class="product--tile">
+          <img src="images/product-1.png" alt="" />
+          <div class="product--tile__body">
+            <p class="product--tile__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, aliquam.
+            </p>
+            <p class="product--tile__price">$799.55</p>
+          </div>
+        </div>
+        
+              <div class="product--tile  ">
+                <img src="images/product-2.png" alt="" />
+                <div class="product--tile__body">
+                  <p class="product--tile__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+                    aliquam.
+                  </p>
+                  <div
+                    class="btn-group product--tile__price margin--button"
+                    role="group"
+                    aria-label="Basic mixed styles example"
+                  >
+                    <button
+                      type="button"
+                      class="btn btn-danger btn-lg product--tile2__price"
+                    >
+                      $659.55$
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-warning btn-lg product--tile2__buy"
+                    >
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product--tile product--tile--3  ">
+                <img src="images/product-3.png" alt="" />
+                <div class="product--tile__body">
+                  <p class="product--tile__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+                    aliquam.
+                  </p>
+                  <p class="product--tile__price">$129.55</p>
+                  <div class="product-tile-buttons">
+                    <button class="btn  btn-lg"><i class="fa-solid fa-plus fa-2xl" style="color: #80ff00;"></i></button>
+                    <button class="btn  btn-lg"><i class="fa-solid fa-heart fa-2xl" style="color: #ff0000;"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="product--tile">
+                <img src="images/product-4.png" alt="" />
+                <div class="product--tile__body">
+                  <p class="product--tile__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, aliquam.
+                  </p>
+                  <p class="product--tile__price">$799.55</p>
+                </div>
+              </div>
+              <div class="product--tile">
+                <img src="images/product-5.png" alt="" />
+                <div class="product--tile__body">
+                  <p class="product--tile__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, aliquam.
+                  </p>
+                  <p class="product--tile__price">$799.55</p>
+                </div>
+              </div>
+              <div class="product--tile">
+                <img src="images/product-6.png" alt="" />
+                <div class="product--tile__body">
+                  <p class="product--tile__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, aliquam.
+                  </p>
+                  <p class="product--tile__price">$799.55</p>
+                </div>
+              </div>
+              <div class="product--tile">
+                <img src="images/product-7.png" alt="" />
+                <div class="product--tile__body">
+                  <p class="product--tile__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, aliquam.
+                  </p>
+                  <p class="product--tile__price">$799.55</p>
+                </div>
+              </div>
+              <div class="product--tile product--tile--8">
+                <div class="product--tile__image"></div>
+              </div>
+              <div class="container__for_button">
+                <div class="container__button">
+                  <button > LOAD MORE</button>
+                </div>
+              </div>
+            </div>
+      </div>
+
+    <!-- /product tile -->
+
+    <!-- banner image -->
+    <div class="banner">
+      <img src="images/banner-main.png" alt="" class="banner-image">
+    </div>
+    <!-- /banner image -->
+
+    <!-- featured products -->
+    <div class="featured-products hidden">
+      <div class="featured-products__title">
+        <h3>Featured Products</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="featured-products__body row">
+        <div class="product--tile">
+          <img src="images/product-1.png" alt="" />
+          <div class="product--tile__body">
+            <p class="product--tile__description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa,
+              nisi!
+            </p>
+            <p class="product--tile__price">$799.55</p>
+          </div>
+        </div>
+        <div class="product--tile">
+          <img src="images/product-2.png" alt="" />
+          <div class="product--tile__body">
+            <p class="product--tile__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+              aliquam.
+            </p>
+            <p class="product--tile__price">$799.55</p>
+          </div>
+        </div>
+        <div class="product--tile">
+          <img src="images/product-3.png" alt="" />
+          <div class="product--tile__body">
+            <p class="product--tile__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+              aliquam.
+            </p>
+            <p class="product--tile__price">$799.55</p>
+          </div>
+        </div>
+        <div class="product--tile">
+          <img src="images/product-4.png" alt="" />
+          <div class="product--tile__body">
+            <p class="product--tile__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+              aliquam.
+            </p>
+            <p class="product--tile__price">$799.55</p>
+          </div>
+        </div>
+        <div class="product--tile">
+          <img src="images/product-1.png" alt="" />
+          <div class="product--tile__body">
+            <p class="product--tile__description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa,
+              nisi!
+            </p>
+            <p class="product--tile__price">$799.55</p>
+          </div>
+        </div>
+        <div class="product--tile">
+          <img src="images/product-2.png" alt="" />
+          <div class="product--tile__body">
+            <p class="product--tile__description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa,
+              nisi!
+            </p>
+            <p class="product--tile__price">$799.55</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /featured products -->
+
+    <!-- hero -->
+    <div class="pack">
+      <div class="hero--bla">
+        <div class="hero__image">
+          <img src="images/focus-icon.png" alt="" class="hero__image" />
+          </div>
+          <div class="hero__description">
+            <h3>FOCUS</h3>
+            <p class="hero__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+              ullam.
+            </p>
+          </div>
+      </div>
+      <div class="hero--bla">
+        <div class="hero__image hero__image--right ">
+          <img src="images/method-icon.png" alt="" class="hero__image" />
+          </div>
+          <div class="hero__description hero__description--left ">
+            <h3 >METHOD</h3>
+            <p class="hero__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+              ullam.
+            </p>
+          </div>
+      </div>
+        <div class="hero--bla">
+          <div class="hero__image">
+            <img src="images/knowledge-icon.png" alt="" class="hero__image" />
+            </div>
+            <div class="hero__description">
+              <h3>KNOWLEDGE</h3>
+              <p class="hero__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+                ullam.
+              </p>
+            </div>
+        </div>
+      
+        
+      </div>
+    </div>
+    <!-- /hero -->
+
+    <!-- footer -->
+    <footer>
+      <div class="footer">
+
+        <div>
+          &#169; Copyrigth 2019.
+          <p><span>All Rights Reserved.</span></p>
+          <h4>CONTACT</h4>
+          <div class="contact">
+            <p>Headquarters:</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem, ipsum dolor.</p>
+          </div>
+          <p>contact@osf-global.com</p>
+          <p>+1(888) 548-4344</p>
+        </div>
+
+        <div class="categoriest">
+          <h4>CATEGORIEST</h4>
+          <ul>
+            <a href="error.html">
+              <li>Alcohol</li>
+              <li>Art</li>
+              <li>Books</li>
+              <li>Drink</li>
+              <li>Electronics</li>
+            </a>
+          </ul>
+        </div>
+        <div class="categoriest two">
+          <ul >
+            <a href="error.html">
+              <li>Home</li>
+              <li>Jewelry</li>
+              <li>Kids & Baby</li>
+              <li>Men's Fashion</li>
+              <li>Mobile</li>
+              <li>Motorcycles</li>
+              <li>Movies</li>
+              <li>Music</li>
+            </a>
+          </ul>
+        </div>
+        <div class="categoriest three">
+          <ul >
+            <a href="error.html">
+              <li>Sport</li>
+              <li>Toys</li>
+              <li>Travel</li>
+              <li>Women's Fashion</li>
+            </a>
+          </ul>
+        </div>
+        <div class="categoriest ">
+          <h4>ABOUT</h4>
+          <ul>
+            <a href="error.html">
+              <li>About us</li>
+              <li>Delivery</li>
+              <li>Testimonials</li>
+              <li>Contact</li>
+            </a>
+          </ul>
+        </div>
+        <div class="footer__icons">
+          <i class="fa-brands fa-facebook-f fa-xl" style="color: #b2b2b2;"></i>
+          <i class="fa-brands fa-google-plus-g fa-xl" style="color: #b2b2b2;"></i>
+          <i class="fa-brands fa-twitter fa-xl" style="color: #b2b2b2;"></i>
+          <i class="fa-brands fa-pinterest-p fa-xl" style="color: #b2b2b2;"></i>
+        </div>
+      </div>
+    </footer>
+    <!-- /footer -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

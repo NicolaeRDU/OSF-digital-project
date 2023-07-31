@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/cart.css">
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/be99c0c318.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  </head>
+  <body>
+    <!-- header part -->
+    <div class="header">
+      <header>
+        <button id="btn-menu">
+          <i class="fa-solid fa-bars fa-2xl" style="color: #000000"></i>
+        </button>
+        <a href="index.html"><img src="images/logo_icon.png" alt="" /></a>
+        <div class="white-space"></div>
+      </header>
+      <nav class="nav-menu hidden">
+        <ul>
+          <li>SERVICES</li>
+          <li>COMPANY</li>
+          <li>LIBRARY</li>
+          <li>CONTACT US</li>
+        </ul>
+      </nav>
+
+      <div class="icons">
+        <i
+          class="fa-solid fa-magnifying-glass fa-flip-horizontal fa-xl lupa"
+          style="color: #c0c0c0"
+        ></i>
+        <i class="fa-regular fa-user fa-xl" id="btn" style="color: #c0c0c0"></i>
+        <i class="fa-regular fa-heart fa-xl" style="color: #c0c0c0"></i>
+        <i class="fa-solid fa-bag-shopping fa-xl" style="color: #c0c0c0"></i>
+      </div>
+    </div>
+
+    <!-- /header part -->
+
+    <!-- login modal -->
+    <div class="middle">
+      <div class="login-modal hidden">
+        <h3 class="modal__title">Sign in</h3>
+        <div class="modal__body">
+          <label for="email " class="modal__label modal__for__email"
+            >Email</label
+          >
+          <input
+            type="email"
+            name=""
+            id="email"
+            class="modal__input input--email"
+          />
+
+          <label for="password" class="modal__label modal__for__password"
+            >Password</label
+          >
+          <div class="input--eye--icon">
+            <input
+              type="password"
+              id="password"
+              class="modal__input input--password"
+            />
+            <button class="eye--img">
+              <img src="images/showPassword_icon.png" alt="" />
+            </button>
+          </div>
+
+          <p class="modal__password">forgot password</p>
+
+          <button class="modal__button">LOGIN</button>
+
+          <p class="modal__text">I don't have an account</p>
+        </div>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <!-- /login modal -->
+
+    <!-- body -->
+    <div class="body">
+      <p class="go--home"><a href="index.html" class="home">Home</a> / Shopping Cart</p>
+      <h1>SHOPPING CART</h1>
+        <div class="cart--items">
+          <section class="item1">
+            <div class="container"></div>
+            <div class="cart--items__description">
+              <p>Lorem ipsum dolor sit.</p>
+              <p>$100</p>
+            </div>
+            <div class="btn-group">
+              <button class="minus">-</button>
+              <button class="quantity">1</button>
+              <button class="plus">+ </button>
+            </div> 
+            <p class="price">$100</p>
+            <button class="btn__remove"><i class="fa-solid fa-x fa-sm"></i></button>
+          </section>
+        </div>
+        <div class="checkout">
+          <div class="voucher">
+            <input type="text" placeholder="Enter Coupon Code">
+            <button>APPLY</button>
+          </div>
+          <div class="update__cart">
+            <button>UPDATE CART</button>
+            <button id="proceed--checkout">PROCEED TO CHECKOUT</button>
+          </div>
+        </div>
+    </div>
+    <!-- /body -->
+
+    <!-- footer -->
+    <footer>
+      <div class="footer">
+
+        <div>
+          &#169; Copyrigth 2019.
+          <p><span>All Rights Reserved.</span></p>
+          <h4>CONTACT</h4>
+          <div class="contact">
+            <p>Headquarters:</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem, ipsum dolor.</p>
+          </div>
+          <p>contact@osf-global.com</p>
+          <p>+1(888) 548-4344</p>
+        </div>
+
+        <div class="categoriest">
+          <h4>CATEGORIEST</h4>
+          <ul>
+            <a href="error.html">
+              <li>Alcohol</li>
+              <li>Art</li>
+              <li>Books</li>
+              <li>Drink</li>
+              <li>Electronics</li>
+            </a>
+          </ul>
+        </div>
+        <div class="categoriest two">
+          <ul >
+            <a href="error.html">
+              <li>Home</li>
+              <li>Jewelry</li>
+              <li>Kids & Baby</li>
+              <li>Men's Fashion</li>
+              <li>Mobile</li>
+              <li>Motorcycles</li>
+              <li>Movies</li>
+              <li>Music</li>
+            </a>
+          </ul>
+        </div>
+        <div class="categoriest three">
+          <ul >
+            <a href="error.html">
+              <li>Sport</li>
+              <li>Toys</li>
+              <li>Travel</li>
+              <li>Women's Fashion</li>
+            </a>
+          </ul>
+        </div>
+        <div class="categoriest ">
+          <h4>ABOUT</h4>
+          <ul>
+            <a href="error.html">
+              <li>About us</li>
+              <li>Delivery</li>
+              <li>Testimonials</li>
+              <li>Contact</li>
+            </a>
+          </ul>
+        </div>
+        <div class="footer__icons">
+          <i class="fa-brands fa-facebook-f fa-xl" style="color: #b2b2b2;"></i>
+          <i class="fa-brands fa-google-plus-g fa-xl" style="color: #b2b2b2;"></i>
+          <i class="fa-brands fa-twitter fa-xl" style="color: #b2b2b2;"></i>
+          <i class="fa-brands fa-pinterest-p fa-xl" style="color: #b2b2b2;"></i>
+        </div>
+      </div>
+    </footer>
+    <!-- /footer -->
+    
+    <script src="cart.js"></script>
+  </body>
+</html>

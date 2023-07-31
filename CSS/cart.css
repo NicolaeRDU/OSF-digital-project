@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+.body {
+  /* background-color: #f1edea; */
+  background-color: #f1edea;
+  color: #fff;
+  text-align: center;
+  height: 116rem;
+}
+
+.go--home {
+  margin-top: 0;
+  margin-bottom: 2.3rem;
+  padding-top: 5rem;
+  color: #45413e;
+}
+
+.body h1 {
+  color: #45413e;
+  margin-bottom: 5rem;
+}
+
+.home {
+  color: #93c33d;
+  text-decoration: none;
+}
+
+/* CART ITEMS */
+
+.cart--items {
+  background-color: #fff;
+  height: 41rem;
+  color: black;
+  padding-top: 2rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: grey;
+  width: 10rem;
+  height: 10rem;
+  margin-left: 10rem;
+}
+
+.cart--items__description {
+  text-align: start;
+  margin-left: 2rem;
+  margin-right: 20rem;
+}
+
+.btn-group {
+  margin-right: 8rem;
+}
+
+.btn-group button {
+  background-color: #fff; /* Green background */
+  border: 1px solid #e8e2d6; /* Green border */
+  color: black; /* White text */
+  padding: 1rem 2rem; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.price {
+  position: relative;
+  top: 0.9rem;
+  margin-right: 8rem;
+  color: #45413e;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.btn__remove {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 20px;
+  border: 1px solid #e8e2d6;
+  padding: 0;
+}
+
+.btn__remove:hover {
+  background-color: #fff;
+}
+
+.btn__remove i {
+  position: relative;
+  bottom: 2.1rem;
+  right: 0.8rem;
+}
+
+/* CHECKOUT */
+
+.checkout {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  margin-top: 0.5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  padding-top: 7rem;
+  height: 52rem;
+}
+
+.voucher input {
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  outline: none;
+  border: 1px solid #e8e2d6;
+}
+
+.voucher button,
+.update__cart button {
+  padding: 1rem 3rem;
+  color: #93c33d;
+  border: 1px solid #93c33d;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+#proceed--checkout {
+  background-color: #93c33d;
+  color: #fff;
+}
